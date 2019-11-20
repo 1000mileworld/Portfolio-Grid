@@ -3,9 +3,76 @@
 <head>
 	<title>Grid Layout</title>
 	<style>
+		.single-page-content{
+			border: solid 1px;
+			width: 40%;
+			min-height: 80vh;
+			margin: 10vh auto;
+			min-width: 450px;
+		}
+		.portfolio-grid{
+			display: grid;
+			grid-template-rows: repeat(3, 1fr);
+			grid-template-columns: repeat(2, 1fr);
+			background: hsl(0, 0%, 90%);
+			grid-gap: 2rem;
+			padding: 2rem;
+			
+		}
+		.project-item{
+			border: solid 1px blue;
+			text-align: center;
+		}
+		.project-image {
+		  height: calc(100% - 6.8rem);
+		  width: 100%;
+		  object-fit: cover;
+		}
+
+		.project-title {
+		  font-size: 2rem;
+		  padding: 2rem 0.5rem;
+		}
 	</style>
 </head>
 <body>
+
+<div class="single-page-content">
+	<div class="portfolio-grid">
+		<div class="project-item">
+			<a href="https://codepen.io/freeCodeCamp/full/zNqgVx"target="_blank">
+	 <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="project">
+		      <p class="project-title">Project 1</p>
+		    </a>
+		</div>
+		<div class="project-item">
+			<a href="https://codepen.io/freeCodeCamp/full/zNqgVx"target="_blank">
+	 <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="project">
+		      <p class="project-title">Project 2</p>
+		    </a>
+		</div>
+		<div class="project-item">
+			<a href="https://codepen.io/freeCodeCamp/full/zNqgVx"target="_blank">
+	 <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="project">
+		      <p class="project-title">Project 3</p>
+		    </a>
+		</div>
+		<div class="project-item">
+			<a href="https://codepen.io/freeCodeCamp/full/zNqgVx"target="_blank">
+	 <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="project">
+		      <p class="project-title">Project 4</p>
+		    </a>
+		</div>
+		<div class="project-item">
+			<a href="https://codepen.io/freeCodeCamp/full/zNqgVx"target="_blank">
+	 <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="project">
+		      <p class="project-title">Project 5</p>
+		    </a>
+		</div>
+	</div>
+</div>
+
+
 
 </body>
 </html>
